@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+    <title>探險時光</title>
+    <style>
+        .happy{
+          width: 900px;
+          margin: 50px auto;
+          border:solid 1px rgb(241, 22, 22);
+          overflow: hidden;
+        }
+        .bdcard{
+          width: 800px;
+          float:left; 
+          padding: 50px;
+        }
+        .bdcard img{
+          display: block;
+          width:100%;
+        }
+        .bdtext{
+          float: right;  
+          width: 430px;
+          padding: 20px 20px 0px 0px;
+        }
+    </style>
+  </head>
+  <body style="background-color: rgba(167, 243, 243, 0.968);">
+    <div class="happy">
+      <div class="bdcard">
+        <section>
+            <img class="mySlides" src="img/p1.jpg" style="display:block; margin:auto;" alt="111" >
+            <img class="mySlides" src="img/p2.jpg" style="display:block; margin:auto;" alt="111" >
+            <img class="mySlides" src="img/p3.jpg" style="display:block; margin:auto;" alt="111" >
+          <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); // Change image every 1.5 seconds
+          }
+          </script>
+        </section>
+      </div>
+      <div class="bdtext">
+        <h1>夢想驛站</h1>
+        <p>只要有夢想，那你就會有希望</p>
+        <p>這裡是夢想的休息站，當你沒有點子或累了，可以來這充電能量。</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -27,8 +27,8 @@ nav a{
     padding: 10px;
 }
 nav a:hover{
-    background-color: rgb(246, 106, 6);
-    color:rgb(238, 208, 9);
+    background-color: rgb(221, 108, 27);
+    color:rgb(235, 220, 230);
     transition: background-color 1s linear, color 1s ease-in;
 }
 

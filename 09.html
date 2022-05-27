@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+    <title>探險時光</title>
+    <style>
+        .happy{
+          width: 900px;
+          margin: 50px auto;
+          border:solid 1px rgb(241, 22, 22);
+          overflow: hidden;
+        }
+        .bdcard{
+          width: 800px;
+          float:left; 
+          padding: 50px;
+        }
+        .bdcard img{
+          display: block;
+          width:100%;
+        }
+        .bdtext{
+          float: right;  
+          width: 430px;
+          padding: 20px 20px 0px 0px;
+        }
+    </style>
+  </head>
+  <body style="background-color: rgba(167, 243, 243, 0.968);">
+    <div class="happy">
+      <div class="bdcard">
+        <section>
+            <img class="mySlides" src="img/t1.jpg" style="display:block; margin:auto;" alt="111" >
+            <img class="mySlides" src="img/t2.jpg" style="display:block; margin:auto;" alt="111" >
+            <img class="mySlides" src="img/t3.jpg" style="display:block; margin:auto;" alt="111" >
+          <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); // Change image every 1.5 seconds
+          }
+          </script>
+        </section>
+      </div>
+      <div class="bdtext">
+        <h1>幸福山丘</h1>
+        <p>活動中心是育幼院的精神所在</p>
+        <p>為院童們的自立準備宿舍，充滿快樂的幸福園地。</p>
+      </div>
+    </div>
+  </body>
+</html>
