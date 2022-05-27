@@ -75,11 +75,11 @@ nav a:hover{
     bottom:10px;
 }
 
-aside nav ul{
+nav ul{
     display: flex;
     justify-content: right;
 }
-aside nav li{
+nav li{
     list-style-type: none;
     padding: 10px;
 }
