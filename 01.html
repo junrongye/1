@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+    <title>花見步道</title>
+    <link rel="stylesheet" href="/flexbox.css">
+    <style>
+        .happy{
+          width: 900px;
+          margin: 50px auto;
+          border:solid 1px rgb(241, 22, 22);
+          overflow: hidden;
+        }
+        .bdcard{
+          width: 800px;
+          float:left; 
+          padding: 50px;
+        }
+        .bdcard img{
+          display: block;
+          width:100%;
+        }
+        .bdtext{
+          float: right;  
+          width: 430px;
+          padding: 20px 20px 0px 0px;
+        }
+    </style>
+  </head>
+  <body style="background-color: rgba(167, 243, 243, 0.968);">
+    <header>
+            
+      <div class="banner">
+          <a href="index.html"><img src="img/L1.jpg" width="250px" height="80px" alt="logo"></a>
+          <div class="title">
+              <h1>友愛之家-大同育幼院</h1>
+              <h2>home of love</h2>
+          </div>
+
+          <div>
+              <nav>
+                  <ul>
+                      <li><a href="https://www.ccf.org.tw/60/about/MTMxNA">認識本院</a></li>
+                      <li><a href="datong.html">大同十景</a></li>
+                      <li><a href="https://www.ccf.org.tw/60/news">活動即訊</a></li>
+                      <li><a href="https://www.ccf.org.tw/60/donation/MTMyMg">即時捐愛</a></li>
+                      <li><a href="mailto:dt@ccf.org.tw">聯絡我們</a></li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+      <div>
+              
+      </div>
+      
+  </header>
+    <div class="happy">
+      <div class="bdcard">
+        <section>
+            <img class="mySlides" src="img/f1.webp" style="display:block; margin:auto;" alt="111">
+            <img class="mySlides" src="img/f2.webp" style="display:block; margin:auto;" alt="111" >
+            <img class="mySlides" src="img/f3.jpg" style="display:block; margin:auto;" alt="111" >
+            <img class="mySlides" src="img/f4.jpg" style="display:block; margin:auto;" alt="111" >
+          <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); // Change image every 1.5 seconds
+          }
+          </script>
+        </section>
+      </div>
+      <div class="bdtext">
+        <h1>花見步道</h1>
+        <p>花兒花兒你在哪，花是生活環境的重要角色</p>
+        <p>春天到了，大地一片鳥語花香。</p>
+      </div>
+    </div>
+  </body>
+</html>
